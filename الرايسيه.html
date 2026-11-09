@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم لغة الإشارة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        
+
+        /* القسم الأزرق */
+        .hero-section {
+       
+            background-color: #1a4f8b;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+            .hero-section h1 {
+                
+                font-size: 48px;
+                margin: 0 0 10px 0;
+            }
+
+            .hero-section p {
+                
+                font-size: 20px;
+                margin: 0;
+                opacity: 0.9;
+            }
+
+        /* حاوية البطاقات */
+        .cards-container {
+        
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: -50px;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        /* تصميم البطاقة */
+        .card {
+            
+            background-color: white;
+            border-radius: 20px;
+            width: 300px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+            .card img {
+                width: 150px;
+                height: 150px;
+                object-fit: contain;
+                margin-bottom: 20px;
+            }
+
+            .card h2 {
+                font-size: 28px;
+                color: #333;
+                margin: 0 0 10px 0;
+            }
+
+            .card p {
+                font-size: 16px;
+                color: #666;
+                margin: 0;
+            }
+
+        /* قسم الملاحظة */
+        .note-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 0 20px;
+            color: #333;
+        }
+
+            .note-section h3 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .note-section p {
+                font-size: 18px;
+                margin: 0;
+            }
+
+        /* التجاوب مع الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            .cards-container {
+                margin-top: 20px;
+                gap: 20px;
+            }
+
+            .hero-section h1 {
+                font-size: 36px;
+            }
+
+            .header {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القسم الأزرق -->
+    <div class="hero-section">
+        <h1>لغة الإشارة</h1>
+        <p>أساسيات لغة الصم والبكم</p>
+    </div>
+
+    <!-- البطاقات -->
+    <div class="cards-container">
+        <!-- بطاقة الفيديوهات -->
+        <div class="card">
+            <a href="فيد.html">
+            <!-- ضع رابط أيقونة الفيديو هنا -->
+            <img src="IMG-20261107-WA0097.jpg" alt="أيقونة فيديوهات">
+            <h2>فيديوهات</h2>
+            <p>تعلم لغة الإشارة عن طريق الفيديوهات</p>
+                </a>
+        </div>
+
+        <!-- بطاقة الصور -->
+        <div class="card">
+            <a href="صور.html">
+            <!-- ضع رابط أيقونة الكاميرا هنا -->
+            <img src="ab6cfd8d520455a5152c702375dab93c.jpg" alt="أيقونة صور">
+            <h2>صور</h2>
+            <p>تعلم لغة الإشارة عن طريق الصور</p></a>
+        </div>
+    </div>
+
+    <!-- الملاحظة -->
+    <div class="note-section">
+        <h3>ملاحظة:</h3>
+        <p>هناك طرق كثيرة لتعلم لغة الإشارة</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم لغة الإشارة بالصور - Sign Learn</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+        }
+
+       
+
+        /* القسم الأزرق العلوي */
+        .hero-section {
+            background-color: #1a4f8b;
+            color: white;
+            text-align: center;
+            padding: 40px 20px 90px 20px;
+            border-bottom-left-radius: 45px;
+            border-bottom-right-radius: 45px;
+        }
+
+            .hero-section h1 {
+                font-size: 38px;
+                margin: 0 0 10px 0;
+                font-weight: bold;
+            }
+
+            .hero-section p {
+                font-size: 18px;
+                margin: 0;
+                opacity: 0.9;
+            }
+
+        /* حاوية البطاقات المتجاورة */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            max-width: 1200px;
+            margin: -55px auto 40px auto;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        /* تصميم البطاقة كـ رابط (A Tag) لتكون قابلة للنقر والانتقال */
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            width: 200px;
+            padding: 25px 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none; /* لإلغاء الخط السفلي للرابط */
+            color: inherit;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+            }
+
+        /* حاوية الدائرة والشارة */
+        .icon-wrapper {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 15px auto;
+        }
+
+        /* الدائرة البيضاء المحاطة بإطار أزرق */
+        .icon-circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #ffffff;
+            border: 3px solid #1a4f8b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(26, 79, 139, 0.15);
+        }
+
+            .icon-circle img {
+                width: 75%;
+                height: 75%;
+                object-fit: contain;
+            }
+
+        /* شارة الترقيم العلوية (D1, D2...) */
+        .badge-tag {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            background-color: #1a4f8b;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 3px 9px;
+            border-radius: 50px;
+            border: 2px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* نصوص البطاقة */
+        .card h2 {
+            font-size: 20px;
+            color: #222;
+            margin: 0 0 8px 0;
+            font-weight: bold;
+        }
+
+        .card p {
+            font-size: 13px;
+            color: #666;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* زر العودة للرئيسية في الأسفل (اختياري وجميل) */
+        .back-home {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+            .back-home a {
+                background-color: #1a4f8b;
+                color: white;
+                padding: 10px 25px;
+                border-radius: 30px;
+                text-decoration: none;
+                font-weight: bold;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+
+                .back-home a:hover {
+                    background-color: #0d3b66;
+                }
+
+        /* التجاوب مع الشاشات المتوسطة والصغيرة */
+        @media (max-width: 992px) {
+            .cards-container {
+                gap: 15px;
+            }
+
+            .card {
+                width: 45%;
+                max-width: 220px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .cards-container {
+                margin-top: -30px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .hero-section h1 {
+                font-size: 28px;
+            }
+
+            .hero-section {
+                padding-bottom: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القسم الرئيسي العلوي -->
+    <div class="hero-section">
+        <h1>تعلم لغة الإشارة بالصور</h1>
+        <p>استكشف أساسيات لغة الإشارة من خلال الصور</p>
+    </div>
+
+    <!-- شبكة البطاقات الخمس المتجاورة (قابلة للنقر والانتقال) -->
+    <div class="cards-container">
+
+        <!-- 1. بطاقة الحروف (D1) -->
+        <a href="letters.html" class="card">
+            <div class="icon-wrapper">
+                <span class="badge-tag">D1</span>
+                <div class="icon-circle">
+                    <img src="08b1e896b5fe3489c9f3ffe60079ac26.jpg" alt="الحروف">
+                </div>
+            </div>
+            <div>
+                <h2>الحروف</h2>
+                <p>كيف تتعلم الحروف</p>
+            </div>
+        </a>
+
+        <!-- 2. بطاقة الأرقام (D2) -->
+        <a href="numbers.html" class="card">
+            <div class="icon-wrapper">
+                <span class="badge-tag">D2</span>
+                <div class="icon-circle">
+                    <img src="Screenshot_20261107_195225.jpg" alt="الأرقام">
+                </div>
+            </div>
+            <div>
+                <h2>الأرقام</h2>
+                <p>كيف تتعلم الأرقام</p>
+            </div>
+        </a>
+
+        <!-- 3. بطاقة طوارئ (D3) -->
+        <a href="emergency.html" class="card">
+            <div class="icon-wrapper">
+                <span class="badge-tag">D3</span>
+                <div class="icon-circle">
+                    <img src="738706d72aacee54f21787a93770254e.jpg" alt="طوارئ">
+                </div>
+            </div>
+            <div>
+                <h2>كلمات الطوارئ</h2>
+                <p>كيف تتعلم الطوارئ</p>
+            </div>
+        </a>
+
+        <!-- 4. بطاقة الكلمات الشائعة (D4) -->
+        <a href="common-words.html" class="card">
+            <div class="icon-wrapper">
+                <span class="badge-tag">D4</span>
+                <div class="icon-circle">
+                    <img src="1c5bef3ef2916b2d8be70262f36d630f.jpg" alt="الكلمات الشائعة">
+                </div>
+            </div>
+            <div>
+                <h2>الكلمات الشائعة</h2>
+                <p>كيف تتعلم الكلمات الشائعة</p>
+            </div>
+        </a>
+
+        <!-- 5. بطاقة الألوان (D5) -->
+        <a href="colors.html" class="card">
+            <div class="icon-wrapper">
+                <span class="badge-tag">D5</span>
+                <div class="icon-circle">
+                    <img src="ace74b7a5ec42893ba15c7e024e78ac3.jpg" alt="الألوان">
+                </div>
+            </div>
+            <div>
+                <h2>الألوان</h2>
+                <p>كيف تتعلم الألوان</p>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- زر الرجوع إلى الصفحة الرئيسية -->
+    <div class="back-home">
+        <a href="الرايسيه.html">← العودة للرئيسية</a>
+    </div>
+
+</body>
+</html>
